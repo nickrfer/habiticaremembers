@@ -15,8 +15,7 @@
     "npm": "1.4.28"
   },
   "scripts": {
-    "start": "grunt",
-    "test": "grunt test",
+    "start": "grunt --force",
     "postinstall": "bower install --config.interactive=false"
   },
   "dependencies": {
