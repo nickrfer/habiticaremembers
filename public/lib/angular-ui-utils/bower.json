@@ -1,8 +1,0 @@
-{
-  "name": "angular-ui-utils",
-  "version": "",
-  "main": "./ui-utils.js",
-  "dependencies": {
-    "angular": ">= 1.0.2"
-  }
-}
