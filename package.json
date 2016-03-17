@@ -15,8 +15,8 @@
     "npm": "1.4.28"
   },
   "scripts": {
-    "start": "grunt --force",
-    "postinstall": "bower install --config.interactive=false"
+    "install": "grunt build --force"
+    "start": "grunt --force"
   },
   "dependencies": {
     "acl": "~0.4.4",
