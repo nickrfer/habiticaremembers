@@ -15,7 +15,7 @@
     "npm": "1.4.28"
   },
   "scripts": {
-    "install": "grunt build --force"
+    "install": "grunt build --force",
     "start": "grunt --force"
   },
   "dependencies": {
