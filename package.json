@@ -16,6 +16,7 @@
   },
   "scripts": {
     "install": "grunt build --force",
+    "postinstall": "./node_modules/bower/bin/bower install",
     "start": "grunt --force"
   },
   "dependencies": {
