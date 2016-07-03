@@ -42,3 +42,9 @@ footer {
 footer p i {
   font-size: 12px;
 }
+.app-name {
+  style="padding-top: 5%;"
+}
+.avatar {
+  height:50px;margin-left:-15px !important
+}

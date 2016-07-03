@@ -8,7 +8,7 @@
         <h5 class="list-group-item-heading" data-ng-bind="task.text"></h5>
         <small class="list-group-item-text" ng-repeat="reminder in task.reminders | orderBy: ['-time']"">
           {{reminder.time | date: 'dd/MM/yyyy HH:mm'}}
-          <span style="padding-left:1%;">
+          <span class="reminder-icon">
             <i class="fa fa-circle-o-notch fa-spin fa-fw" ng-show="reminder.isCurrent"></i>
             <i class="fa fa-check-circle" ng-show="!reminder.isCurrent"></i>
           </span>

@@ -4,8 +4,8 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'https://bootswatch.com/superhero/bootstrap.min.css',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'
+        'public/lib/bootswatch-dist/css/bootstrap.min.css',
+        'public/lib/fontawesome/css/font-awesome.min.css'
       ],
       js: [
         'public/lib/jquery/dist/jquery.min.js',
