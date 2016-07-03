@@ -5,7 +5,7 @@ module.exports = {
     lib: {
       css: [
         'https://bootswatch.com/superhero/bootstrap.min.css',
-        'http://fontawesome.io/assets/font-awesome/css/font-awesome.css'
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'
       ],
       js: [
         'public/lib/jquery/dist/jquery.min.js',
