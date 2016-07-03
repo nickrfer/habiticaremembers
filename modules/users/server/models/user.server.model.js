@@ -40,6 +40,18 @@ var UserSchema = new Schema({
     default: '',
     validate: [validateLocalStrategyProperty, 'Please fill in your last name']
   },
+  habiticaUserId: {
+    type: String,
+    trim: true,
+    default: '',
+    validate: [validateLocalStrategyProperty, 'Please fill in your habitica user ID']
+  },
+  habiticaApiKey: {
+    type: String,
+    trim: true,
+    default: '',
+    validate: [validateLocalStrategyProperty, 'Please fill in your habitica API key']
+  },
   displayName: {
     type: String,
     trim: true

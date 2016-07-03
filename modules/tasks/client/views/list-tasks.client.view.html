@@ -1,0 +1,34 @@
+<section>
+  <div class="page-header">
+    <h1>Tasks</h1>
+  </div>
+  <div class="list-group">
+    <div data-ng-repeat="task in vm.tasks | orderBy: ['-createdAt']">
+      <a href="#" class="list-group-item" data-toggle="collapse" data-target="#{{task.id}}" style="margin-top: 1%;">
+        <small class="list-group-item-text">
+          Created on
+          <span data-ng-bind="task.createdAt | date:'mediumDate'"></span><span ng-show="task.date != null && task.date != ''"> - 
+          Due date</span>
+          <span data-ng-bind="task.date | date:'mediumDate'"></span> 
+          <span ng-show="task.reminders.length > 0">
+            <span class="badge">{{task.reminders.length}}</span> 
+            <span class="fa fa-clock-o"></span>
+          </span>
+        </small>
+        <h5 class="list-group-item-heading" data-ng-bind="task.text"></h5>
+      </a>
+
+      <div id="{{task.id}}" class="collapse" ng-show="task.reminders.length > 0">
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="reminder in task.reminders">{{reminder.time | date: 'dd/MM/yyyy HH:mm'}}</li>
+        </ul>
+        <div >
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.tasks.$resolved && !vm.tasks.length">
+    No Tasks yet, why don't you <a href="https://habitica.com">create one at Habitica</a>?
+  </div>
+</section>

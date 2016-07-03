@@ -1,0 +1,24 @@
+<section>
+  <div class="page-header">
+    <h1>Reminders</h1>
+  </div>
+  <div class="list-group">
+  <div data-ng-repeat="task in vm.tasksWithReminders | orderBy: ['-createdAt']">
+      <div href="#" class="list-group-item" data-toggle="collapse" data-target="#{{task.id}}" style="margin-top: 1%;">
+        <h5 class="list-group-item-heading" data-ng-bind="task.text"></h5>
+        <small class="list-group-item-text" ng-repeat="reminder in task.reminders | orderBy: ['-time']"">
+          {{reminder.time | date: 'dd/MM/yyyy HH:mm'}}
+          <span style="padding-left:1%;">
+            <i class="fa fa-circle-o-notch fa-spin fa-fw" ng-show="reminder.isCurrent"></i>
+            <i class="fa fa-check-circle" ng-show="!reminder.isCurrent"></i>
+          </span>
+          <br/>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="alert alert-warning text-center" data-ng-if="vm.reminders.$resolved && !vm.reminders.length">
+  No Reminders yet, why don't you <a data-ui-sref="reminders.create">create one</a>?
+</div>
+</section>

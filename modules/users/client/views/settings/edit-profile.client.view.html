@@ -2,6 +2,20 @@
   <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
     <form name="userForm" ng-submit="updateUserProfile(userForm.$valid)" class="signin" novalidate autocomplete="off">
       <fieldset>
+         <div class="form-group" show-errors>
+          <label for="habiticaUserId">Habitica User ID</label>
+          <input type="text" id="habiticaUserId" name="habiticaUserId" class="form-control" ng-model="user.habiticaUserId" placeholder="Habitica User ID" lowercase required>
+          <div ng-messages="userForm.habiticaUserId.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Habitica User ID is required.</p>
+          </div>
+        </div>
+        <div class="form-group" show-errors>
+          <label for="habiticaApiKey">Habitica API Key</label>
+          <input type="text" id="habiticaApiKey" name="habiticaApiKey" class="form-control" ng-model="user.habiticaApiKey" placeholder="Habitica API Key" lowercase required>
+          <div ng-messages="userForm.habiticaApiKey.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Habitica API Key is required.</p>
+          </div>
+        </div>
         <div class="form-group" show-errors>
           <label for="firstName">First Name</label>
           <input type="text" id="firstName" name="firstName" class="form-control" ng-model="user.firstName" placeholder="First Name" required>

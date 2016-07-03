@@ -35,3 +35,10 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
+footer p i {
+  font-size: 12px;
+}

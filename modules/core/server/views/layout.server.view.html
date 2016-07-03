@@ -36,12 +36,30 @@
 </head>
 
 <body class="ng-cloak">
-  <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+  <header ng-include="'/modules/core/client/views/header.client.view.html'"></header>
   <section class="content">
     <section class="container">
       {% block content %}{% endblock %}
     </section>
   </section>
+
+  <footer>
+    <p>by nickrfer</p>
+    <p>
+      <a href="https://github.com/nickrfer" target='_blank'>
+        <i class="fa fa-github fa-fw"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/nickrfer" target='_blank'>
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="http://www.freecodecamp.com/nickrfer" target='_blank'>
+        (<i class="fa fa-fire fa-fw"></i>)
+      </a>
+      <a href="http://codepen.io/nickrfer" target='_blank'>
+        <i class="fa fa-codepen"></i>
+      </a>
+    </p>
+  </footer>
 
   <!--Embedding The User Object-->
   <script type="text/javascript">

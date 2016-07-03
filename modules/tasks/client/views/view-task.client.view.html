@@ -1,0 +1,18 @@
+<section>
+  <div class="page-header">
+    <h1 data-ng-bind="vm.task.text"></h1>
+  </div>
+  <div class="pull-right">
+    <a class="btn btn-primary"
+       data-ui-sref="tasks.edit({ taskId: vm.task._id })">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+  </div>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span data-ng-bind="vm.task.createdAt | date:'mediumDate'"></span>
+    </em>
+  </small>
+  <p class="lead" data-ng-bind="vm.task.content"></p>
+</section>
