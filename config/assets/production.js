@@ -4,10 +4,12 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/paper-bootstrap/dist/css/paper-min.css',
-        'public/lib/paper-bootstrap/dist/css/font-awesome.css'
+        'https://bootswatch.com/superhero/bootstrap.min.css',
+        'http://fontawesome.io/assets/font-awesome/css/font-awesome.css'
       ],
       js: [
+        'public/lib/jquery/dist/jquery.min.js',
+        'public/lib/bootstrap/dist/js/bootstrap.min.js',
         'public/lib/angular/angular.min.js',
         'public/lib/angular-resource/angular-resource.min.js',
         'public/lib/angular-animate/angular-animate.min.js',
