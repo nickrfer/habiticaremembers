@@ -1,6 +1,6 @@
 [![habiticaremembers Logo](https://github.com/nickrfer/habiticaremembers/blob/master/modules/core/client/img/brand/logo.png)](https://habiticaremembers.herokuapp.com)
 
-MEANJS app that reads user reminders from Habitica tasks and adds notifications for it.
+MEANJS app that reads user reminders from Habitica tasks and adds notifications for it. 
 
 [![Build Status](https://travis-ci.org/nickrfer/habiticaremembers.svg?branch=master)](https://travis-ci.org/nickrfer/habiticaremembers)
 [![Dependencies Status](https://david-dm.org/nickrfer/habiticaremembers.svg)](https://david-dm.org/nickrfer/habiticaremembers)
