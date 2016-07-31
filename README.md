@@ -7,6 +7,7 @@ MEANJS app that reads user reminders from Habitica tasks and adds notifications 
 [![Coverage Status](https://coveralls.io/repos/nickrfer/habiticaremembers/badge.svg?branch=master&service=github)](https://coveralls.io/github/nickrfer/habiticaremembers?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
+[![habiticaremembers Logo](https://github.com/nickrfer/habiticaremembers/blob/master/modules/core/client/img/brand/app-screenshot.png)](https://habiticaremembers.herokuapp.com)
 
 ## Credits
 Built on top of the MEAN.JS stack https://github.com/meanjs/generator-meanjs.
