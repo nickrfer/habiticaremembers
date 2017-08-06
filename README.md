@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/nickrfer/habiticaremembers.png?label=ready&title=Ready)](https://waffle.io/nickrfer/habiticaremembers?utm_source=badge)
 [![Stories in Ready](https://badge.waffle.io/nickrfer/habiticaremembers.png?label=ready&title=Ready)](https://waffle.io/nickrfer/habiticaremembers)
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
